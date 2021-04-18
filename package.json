@@ -1,0 +1,61 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "author": "tochiji",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "gatsby clean",
+    "build": "gatsby build",
+    "deploy": "gatsby build && gh-pages -d public -b main",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "lint": "eslint 'src/**/*.ts{,x}'",
+    "lint-md": "remark .",
+    "format": "eslint --fix 'src/**/*.ts{,x}'"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended"
+    ]
+  },
+  "dependencies": {
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-helmet": "^6.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gatsby": "^3.3.0",
+    "gatsby-plugin-feed": "^3.3.0",
+    "gatsby-plugin-postcss": "^4.2.0",
+    "gatsby-plugin-react-helmet": "^4.2.0",
+    "gatsby-plugin-twitter": "^3.2.0",
+    "gatsby-plugin-typegen": "^2.2.4",
+    "gatsby-remark-autolink-headers": "^4.0.0",
+    "gatsby-remark-embed-youtube": "0.0.7",
+    "gatsby-remark-numbered-footnotes": "^1.0.1",
+    "gatsby-remark-prismjs": "^5.0.0",
+    "gatsby-remark-responsive-iframe": "^4.0.0",
+    "gatsby-source-filesystem": "^3.3.0",
+    "gatsby-transformer-remark": "^4.0.0",
+    "gh-pages": "^3.1.0",
+    "postcss": "^8.2.9",
+    "postcss-nesting": "^7.0.1",
+    "prettier": "^2.2.1",
+    "prismjs": "^1.22.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.1.0",
+    "remark-cli": "^9.0.0",
+    "remark-lint": "^8.0.0",
+    "remark-preset-lint-recommended": "^5.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  }
+}

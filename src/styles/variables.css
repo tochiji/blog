@@ -1,0 +1,35 @@
+:root {
+  --container-width-m: 660px;
+  --container-width-l: 760px;
+  --container-width-xl: 820px;
+
+  --gutter-xxs: 0.8rem;
+  --gutter-xs: 1.6rem;
+  --gutter-s: 2.4rem;
+  --gutter-m: 3.2rem;
+  --gutter-l: 4rem;
+  --gutter-xl: 4.8rem;
+  --gutter-xxl: 5.6rem;
+
+  --font-size-xs: 1.2rem;
+  --font-size-s: 1.4rem;
+  --font-size-m: 1.6rem;
+  --font-size-l: 2.4rem;
+  --font-size-ll: 3.2rem;
+  --font-size-xl: 4.2rem;
+
+  --font-size-header: 2.2rem;
+
+  --font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif;
+
+  --header-bg-color: #1b1c1d;
+  --bg-color: #232425;
+
+  --color-primary: #4090bf;
+  --color-black: #333;
+  --color-light-gray: #eee;
+  --color-gray: #848484;
+  --color-dark-gray: #666;
+  --color-white: #a9a9b3;
+  --font-color : var(--color-white);
+}

@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.css": "postcss"
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/public": true,
+        "**/.cache": true
+    },
+}

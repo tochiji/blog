@@ -1,0 +1,18 @@
+.wrapper {
+  padding: var(--gutter-xxl) 0;
+  font-size: var(--font-size-m);
+  text-align: center;
+
+  @media (max-width: 566px) {
+    padding: 0 var(--gutter-xs);
+  }
+}
+.title {
+  margin-bottom: var(--gutter-s);
+  font-weight: bold;
+  font-size: var(--font-size-xl);
+
+  @media (max-width: 566px) {
+    margin-bottom: var(--gutter-xs);
+  }
+}

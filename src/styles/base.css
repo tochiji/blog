@@ -1,0 +1,64 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  letter-spacing: 0.06em;
+  font-family: var(--font-family);
+  transition: background-color 0.3s, color 0.3s;
+
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+input,
+button,
+textarea {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+}
+#___gatsby,
+#gatsby-focus-wrapper {
+  min-height: 100vh;
+}
+
+.gatsby-highlight {
+  width: 100%;
+  overflow: scroll;
+  margin: var(--gutter-s) 0;
+}
+
+/* markdown内のcode */
+.language-text {
+  width: 100%;
+  overflow: scroll;
+}
+
+.anchor > svg {
+  fill: var(--font-color);
+}
+
+/* markdown内の脚注 */
+.footnotes p {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 5px;
+  max-width: 90%;
+}
+
+.footnotes a {
+  vertical-align: bottom;
+}

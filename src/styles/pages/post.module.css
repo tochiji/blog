@@ -1,0 +1,120 @@
+article {
+  max-width: var(--container-width-l);
+  padding: 45px 0 0 0;
+  text-align: left;
+
+  @media (max-width: 900px) {
+    max-width: var(--container-width-m);
+  }
+
+  @media (max-width: 566px) {
+    max-width: min(100vw, var(--container-width-m));
+  }
+}
+
+.head {
+  max-width: var(--container-width-l);
+  padding: 0 var(--gutter-xs);
+}
+.date {
+  margin-bottom: var(--gutter-s);
+  font-size: var(--font-size-m);
+
+  @media (max-width: 566px) {
+    margin-bottom: var(--gutter-xs);
+    font-size: var(--font-size-s);
+  }
+}
+.title {
+  font-weight: bold;
+  font-size: var(--font-size-ll);
+  line-height: 1.77;
+  letter-spacing: 0.2rem;
+  transition: border-color 0.3s;
+
+  @media (max-width: 566px) {
+    font-size: var(--font-size-l);
+    line-height: 1.5;
+  }
+}
+.keyVisual {
+  margin-top: var(--gutter-xl);
+
+  @media (max-width: 566px) {
+    margin: var(--gutter-l) calc(-1 * var(--gutter-xs)) 0;
+  }
+}
+.content {
+  margin: var(--gutter-xxl) var(--gutter-xs) 0;
+
+  @media (max-width: 566px) {
+    margin-top: var(--gutter-xl);
+  }
+}
+.share {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.shareInner {
+  position: relative;
+  padding: var(--gutter-m) var(--gutter-s) var(--gutter-s);
+  border: 2px solid var(--font-color);
+  border-radius: 1rem;
+  transition: border-color 0.3s;
+}
+.shareTitle {
+  position: absolute;
+  top: calc(-1 * var(--font-size-s));
+  left: 50%;
+  padding: 0 var(--gutter-xs);
+  background-color: var(--bg-color);
+  font-weight: bold;
+  font-size: var(--font-size-l);
+  transform: translateX(-50%);
+  transition: background-color 0.3s;
+}
+.shareList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > li {
+    margin: 0 var(--gutter-xxs);
+  }
+}
+.links {
+  margin-top: 6rem;
+  text-align: center;
+
+  @media (max-width: 566px) {
+    padding: 0 var(--gutter-xs);
+  }
+}
+.otherPosts > li:not(:first-child) {
+  margin-top: var(--gutter-m);
+}
+.otherPostLabel {
+  margin-bottom: var(--gutter-xs);
+  font-size: var(--font-size-m);
+}
+.otherPostLink {
+  font-size: var(--font-size-s);
+  line-height: 1.6;
+  text-decoration: underline;
+}
+.move {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--gutter-xxl);
+}
+.moveLink {
+  font-size: var(--font-size-xs);
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:not(:first-child) {
+    margin-top: var(--gutter-xs);
+  }
+}

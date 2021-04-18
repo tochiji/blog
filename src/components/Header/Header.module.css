@@ -1,0 +1,64 @@
+.headerRoot {
+  padding: 2.3rem 2.5em;
+  font-size: var(--font-size-header);
+  background-color: var(--header-bg-color);
+  @media (max-width: 566px) {
+    padding: 2.3rem 1em;
+  }
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 760px;
+  max-width: 100%;
+  letter-spacing: 0.06em;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.postLink {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.posts {
+  font-size: var(--font-size-m);
+  font-family: var(--font-family);
+  font-weight: 300;
+}
+
+.logoCursor {
+  display: inline-block;
+  width: 10px;
+  height: calc(var(--font-size-header) * 0.9);
+  background: #AEA129;
+  margin-left: 5px;
+  border-radius: 2px;
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.logoMark {
+  margin-right: 5px;
+}
