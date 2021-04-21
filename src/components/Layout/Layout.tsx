@@ -3,6 +3,7 @@ import React, { ReactNode } from "react";
 import { Footer } from "../Footer";
 import { Head } from "../Head";
 import { Header } from "../Header";
+import { ZenAnime } from "../ZenAnime";
 import * as classes from "./Layout.module.css";
 
 type Props = {
@@ -27,7 +28,7 @@ export const Layout = ({
   image,
   slug,
   isBlogPost = false,
-  meta
+  meta,
 }: Partial<Props>) => {
   return (
     <div className={classes.container}>
@@ -42,7 +43,10 @@ export const Layout = ({
 
       <Header />
 
-      <main className={classes.main}>{children}</main>
+      <main className={classes.main}>
+        <ZenAnime />
+        {children}
+      </main>
 
       <Footer />
     </div>
