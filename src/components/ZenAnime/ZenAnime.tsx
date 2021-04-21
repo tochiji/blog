@@ -1,4 +1,3 @@
-import p5 from "p5";
 import React, { useEffect, useRef } from "react";
 
 import { sketch } from "./sketch";
@@ -8,7 +7,10 @@ export const ZenAnime = () => {
   const ref = useRef(null);
 
   useEffect(() => {
-    new p5(sketch, ref.current || undefined);
+    if (typeof window !== `undefined`) {
+        const p5 = require('p5');
+        new p5(sketch, ref.current || undefined);
+    }
   }, []);
 
   return <div className={classes.sketch} ref={ref} />;
