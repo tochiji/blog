@@ -4,15 +4,17 @@ import { Bubble } from "./Bubble";
 
 export const sketch = (p: p5) => {
   let bubbles: Bubble[] = [];
+  let width = 4000;
+  let height = 4000;
 
   p.setup = () => {
-    p.createCanvas(p.windowWidth, p.windowHeight);
-    for (let i = 0; i < 100; i++) {
+    p.createCanvas(width, height);
+    for (let i = 0; i < 1000; i++) {
       bubbles[i] = new Bubble(
-        p.random(p.width),
-        p.random(0, p.windowHeight),
-        p.windowWidth,
-        p.windowHeight,
+        p.random(width),
+        p.random(0, height),
+        width,
+        height,
       );
     }
   };
