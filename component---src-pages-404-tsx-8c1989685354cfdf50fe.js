@@ -1,0 +1,2 @@
+(self.webpackChunkblog=self.webpackChunkblog||[]).push([[218],{66:function(e,t,n){"use strict";n.r(t),n.d(t,{default:function(){return r}});var a=n(7294),l=n(355);var r=function(){return a.createElement(l.A,{title:"404 Page not found",meta:[{name:"robots",content:"noindex"}]},a.createElement("div",{className:"_404-module--wrapper--UEgP_"},a.createElement("h2",{className:"_404-module--title--218cB"},"404"),a.createElement("div",null,"ページが見つかりません")))}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-8c1989685354cfdf50fe.js.map
