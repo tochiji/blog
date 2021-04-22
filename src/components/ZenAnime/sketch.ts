@@ -9,7 +9,7 @@ export const sketch = (p: p5) => {
 
   p.setup = () => {
     p.createCanvas(width, height);
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 1500; i++) {
       bubbles[i] = new Bubble(
         p.random(width),
         p.random(0, height),
