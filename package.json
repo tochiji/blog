@@ -6,7 +6,7 @@
   "scripts": {
     "prebuild": "gatsby clean",
     "build": "gatsby build",
-    "deploy": "gatsby build && gh-pages -d public -b main",
+    "deploy": "gatsby build && gh-pages -d public -b gh-pages",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "lint": "eslint 'src/**/*.ts{,x}'",
