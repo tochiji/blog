@@ -44,8 +44,8 @@ export const Layout = ({
       <Header />
 
       <main className={classes.main}>
-        <ZenAnime />
         {children}
+        {!isBlogPost && <ZenAnime />}
       </main>
 
       <Footer />
