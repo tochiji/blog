@@ -1,7 +1,9 @@
 .headerRoot {
+  position: relative;
   padding: 2.3rem 2.5em;
   font-size: var(--font-size-header);
   background-color: var(--header-bg-color);
+  z-index: 99999;
   @media (max-width: 566px) {
     padding: 2.3rem 1em;
   }

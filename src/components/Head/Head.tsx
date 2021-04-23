@@ -75,6 +75,10 @@ export const Head = ({
           content: metaDescription,
         },
         {
+          name: 'viewport',
+          content: 'initial-scale=1, viewport-fit=cover',
+        },
+        {
           name: 'image',
           content: metaImage,
         },
