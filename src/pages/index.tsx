@@ -26,7 +26,7 @@ const Home = () => {
   const metaDescription = siteMetadata?.description;
 
   return (
-    <Layout>
+    <Layout isTop={true}>
       <section className={classes.wrapper}>
         <h1>{pageTitle}</h1>
         <h2>{metaDescription}</h2>
