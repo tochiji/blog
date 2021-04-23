@@ -12,6 +12,7 @@ type Props = {
   description: string;
   image: string;
   slug: string;
+  isTop: boolean;
   isBlogPost: boolean;
   meta: [
     {
@@ -27,6 +28,7 @@ export const Layout = ({
   description,
   image,
   slug,
+  isTop = false,
   isBlogPost = false,
   meta,
 }: Partial<Props>) => {
@@ -45,9 +47,8 @@ export const Layout = ({
 
       <main className={classes.main}>
         {children}
-        {!isBlogPost && <ZenAnime />}
       </main>
-
+      {isTop && <ZenAnime />}
       <Footer />
     </div>
   );

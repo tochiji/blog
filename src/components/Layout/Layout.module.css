@@ -1,5 +1,6 @@
 .container {
   min-height: 100vh;
+  display: relative;
   margin: 0;
   flex: 1 auto;
   display: flex;
