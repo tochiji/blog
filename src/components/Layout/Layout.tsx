@@ -32,6 +32,11 @@ export const Layout = ({
   isBlogPost = false,
   meta,
 }: Partial<Props>) => {
+  if (typeof window !== `undefined`) {
+    const innerHeight = window.innerHeight;
+    document.documentElement.style.height = `${innerHeight}px`;
+  }
+
   return (
     <div className={classes.container}>
       <Head
@@ -45,9 +50,7 @@ export const Layout = ({
 
       <Header />
 
-      <main className={classes.main}>
-        {children}
-      </main>
+      <main className={classes.main}>{children}</main>
       {isTop && <ZenAnime />}
       <Footer />
     </div>
