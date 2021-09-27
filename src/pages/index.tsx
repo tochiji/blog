@@ -17,12 +17,11 @@ const query = graphql`
   }
 `;
 
-
 const Home = () => {
   const data = useStaticQuery<GatsbyTypes.TopQuery>(query);
   const siteMetadata = data.site?.siteMetadata;
 
-  const pageTitle = siteMetadata?.title
+  const pageTitle = siteMetadata?.title;
   const metaDescription = siteMetadata?.description;
 
   return (
