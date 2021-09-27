@@ -4,7 +4,7 @@
   align-items: center;
   max-width: var(--container-width-l);
   margin: 0 auto;
-  padding: 6rem var(--gutter-xs) 3rem;
+  padding: 3rem var(--gutter-xs) 3rem;
 }
 .about {
   margin-bottom: var(--gutter-s);

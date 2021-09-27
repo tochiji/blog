@@ -1,5 +1,5 @@
 .container {
-  min-height: 100vh;
+  min-height: 100%;
   display: relative;
   margin: 0;
   flex: 1 auto;
@@ -10,7 +10,7 @@
 }
 
 .main {
-  position:relative;
+  position: relative;
   width: 100%;
   margin: 0;
   flex: 1 auto;
