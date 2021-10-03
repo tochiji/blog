@@ -32,7 +32,7 @@ body {
 
 さて、Safari でブラウザを下方向にスクロールすると、URL バーが縮まることがあります。URL バーが縮まった状態での画面全体の height が「100vh」に対応します。
 
-この「100％と 100vh の間」については、背景色が適用されず、ブラウザの標準の背景色（ここではダークモードなので黒）が適用されてしまいます。
+この「100％と 100vh の間」については、背景色が適用されず、ブラウザの theme-color ([MDN](https://developer.mozilla.org/ja/docs/Web/HTML/Element/meta/name/theme-color))が適用されてしまいます。
 
 <img src="../images/2021/100vh.jpg" style="object-fit: contain;border-radius: 10px;" alt='100vh'>
 
